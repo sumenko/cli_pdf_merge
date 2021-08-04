@@ -22,12 +22,14 @@ You run `PDF_MyDir.py` tool and get single file
 
 ## Install
 
-1. Just run `PDF_merge.py`
-2. You should type 'slug' for your folder, so you'll get `PDF_slug.py` script file
-3. Run `PDF_slug.py`. First time you should give `project_name`
-4. You can type comments for `changelog.txt`
-5. You can add `prefix`. Just start your comment with `!` symbol
-6. Hit `enter`
-7. Delete `PDF_merge.py` if you don't need it any more.
+1. Install Python 3.7.4 or later.
+2. Run `pip install -r requirements.txt` if you just installed Python
+3. Just run `PDF_merge.py`
+4. You should type 'slug' for your folder, so you'll get `PDF_slug.py` script file
+5. Run `PDF_slug.py`. First time you should give `project_name`
+6. You can type comments for `changelog.txt`
+7. You can add `prefix`. Just start your comment with `!` symbol
+8. Hit `enter`
+9. Delete `PDF_merge.py` if you don't need it any more.
 
 The files in `MyDir` folder should start with numbers.
