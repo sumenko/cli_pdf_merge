@@ -1,6 +1,6 @@
 # PDF merger tool
 
-# Usage
+## Usage
 
 Sometimes you have folder with many .PDF files
 
@@ -20,7 +20,7 @@ You run `PDF_MyDir.py` tool and get single file
 .\YYYY-MM-DD project_name prefix (HHMM).pdf | 2021-08-04 project_name prefix(1601).pdf
 ```
 
-# Install
+## Install
 
 1. Just run `PDF_merge.py`
 2. You should type 'slug' for your folder, so you'll get `PDF_slug.py` script file
