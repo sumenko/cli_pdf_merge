@@ -15,16 +15,17 @@ MyDir\
 You run `PDF_MyDir.py` tool and get single file
 
 ```
-.\YYYY-MM-DD project_name prefix (HHMM).pdf
+.\YYYY-MM-DD project_name prefix (HHMM).pdf | 2021-08-04 project_name prefix(1601).pdf
 ```
 
 # Install
 
-Just run PDF_merge.py
-1. You should type 'slug' for your folder, so you'll get `PDF_slug.py` script file
-2. Run `PDF_slug.py`. First time you should give `project_name`
-3. You can type comments for `changelog.txt`
-4. You can add `prefix`. Just start your comment with `!` symbol
-5. Hit `enter`
+1. Just run `PDF_merge.py`
+2. You should type 'slug' for your folder, so you'll get `PDF_slug.py` script file
+3. Run `PDF_slug.py`. First time you should give `project_name`
+4. You can type comments for `changelog.txt`
+5. You can add `prefix`. Just start your comment with `!` symbol
+6. Hit `enter`
+7. Delete `PDF_merge.py` if you don't need it any more.
 
 The files in `MyDir` folder should start with numbers.
