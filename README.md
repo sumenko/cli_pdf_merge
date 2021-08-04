@@ -1,5 +1,7 @@
 # PDF merger tool
 
+# Usage
+
 Sometimes you have folder with many .PDF files
 
 ```
