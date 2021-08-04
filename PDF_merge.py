@@ -93,15 +93,20 @@ def askDialog(msg, answers = ("ynдн"), tries = 3):
 # 	watermaktConnected = False
 # 	print("!!! Модуль с водяным знаком не подключен !!!")
 
-fullPath = os.path.basename(__file__)
-if fullPath == 'PDF_merge.py':
-	slug = input('Короткое название проекта (PDF_<проект>)')
-	copy2('PDF_merge.py', f'PDF_{slug}.py')
+template_file = 'PDF_merge.py'
+base_name = os.path.basename(__file__)
+
+if base_name == template_file:
+	slug = input('Короткое название проекта ( PDF_project_name ): ')
+	copy2(template_file, f'PDF_{slug}.py')
+	if not (os.path.exists('README.md') and
+	        os.path.exists('.gitignore')): # если мы кодим, то не удалять!
+		os.remove(template_file)
 	exit(0)
 
 try:
 	print("Поиск папки")
-	work_dir = re.findall("PDF_.*\.py", fullPath)[0][0:-3]
+	work_dir = re.findall("PDF_.*\.py", base_name)[0][0:-3]
 	print(f"Пробую \\{work_dir}")
 except IndexError:
 	print("Путь не задан. Использую поумолчанию.")
@@ -114,8 +119,6 @@ proj_name = u"NoName"
 needWatermark = True
 watermark_path = "watermark.pdf"
 print (os.getcwd()+"\\"+work_dir)
-
-
 
 pdfs = []
 pdfs2 = [] #для тех что без номеров
