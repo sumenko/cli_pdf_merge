@@ -36,3 +36,10 @@ You run `PDF_MyDir.py` tool and get single file
 7. Delete `PDF_merge.py` if you don't need it any more.
 
 The files in `MyDir` folder should start with numbers.
+
+
+
+====>
+
+add cancellation of prefix `!`+enter
+
