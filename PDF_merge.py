@@ -81,7 +81,7 @@ def makeDirDialog(dirName):
 def askDialog(msg, answers = ("ynдн"), tries = 3):
 	answer = "."
 	n = 0
-	while (answer not in answers or answer is "") and n < tries:
+	while (answer not in answers or answer == "") and n < tries:
 		answer = input(f"{msg} [{tries-n}] ({answers}): ").lower()
 		n+=1
 	return answer
