@@ -200,14 +200,14 @@ for i in range(len(pdfs)):
 			# print () #pdfs[i-1][1].decode("windows-1251"), pdfs[i][1].decode("windows-1251")
 			input(f"ОШИБКА - повтор номера страницы {pdfs[i][0]}\nНажми enter чтобы продолжить")
 
-merger = PDF.PdfFileMerger(strict = False)
+merger = PDF.PdfMerger(strict = False)
 
 for pdf in pdfs:
 	fname = work_dir + pdf[1]
 	print (fname)
 	# x = open(fname, "rb")
 	# print x.readlines()
-	merger.append(PDF.PdfFileReader(work_dir + pdf[1], 'rb'))
+	merger.append(PDF.PdfReader(work_dir + pdf[1], 'rb'))
 outFileName=outFileName.replace("\n","")
 print ("Всего " + str(len(pdfs)) + " .pdf файлов")
 print (u"Записываем в '" + outFileName)
